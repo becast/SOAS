@@ -901,8 +901,8 @@ select:
             lambda: 'return ${play_on_switch_enabled};'
           then:
             - script.execute:
-              id: play_url
-              from_cache: false
+                id: play_url
+                from_cache: false
     internal: true
   - name: Alarm stream name
     platform: template
@@ -1625,7 +1625,7 @@ display:
             topText = "Alarm Instell";
           }
           else if (language == "DE") {
-            topText = "Alarm Einstellung";
+            topText = "Alarm Einst.";
           }
           if (rotate_switch_single_value == 1) {
             topText = "Alarm Hour";
@@ -1732,7 +1732,7 @@ display:
 
           std::string topText = "Alarm Volume";
           if (language == "DE") {
-            topText = "Alarm Lautstärke";
+            topText = "Alarm Lautst.";
           }
           if (rotate_switch_single_value == 3) {
             topText = "Start";
